@@ -1,0 +1,213 @@
+body{
+    font-family: 'Yugioh', serif;
+    background-image: url(../images/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo{
+    color: #ffffff;
+    font-family: yugioh_4, serif;
+}
+
+.cartao{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+}
+
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.lista-personagens{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.slider{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 130px;
+}
+
+.cartao .nome{
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    border-radius: 4px;
+    font-family: yugioh_1, serif;
+}
+
+.cartao .estrela{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+
+.cartao .nivel-carta{
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.cartao .imagem-carta{
+    max-width: 260px;
+    align-self: center;
+}
+
+.cartao .informacoes{
+    border-radius: 5px;
+    max-width: 300px;
+    color: #000000;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #86533c;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+    font-family: 'Yugioh_3', serif;
+}
+
+.cartao .informacoes .informacoes-ataque{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.cartao .informacoes .informacoes-ataque span{
+    font-size: 27px;
+    font-family: 'Yugioh_2', serif;
+}
+
+.cartao .informacoes .descricao{
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 14px;
+}
+
+.fundo-1{
+    background: #1868ae;
+}
+
+.fundo-2{
+    background: #571674;
+}
+
+.fundo-3{
+    background: #c7653f;
+}
+
+.fundo-4{
+    background: #cf9f5e;
+}
+
+.fundo-5{
+    background: #571674;
+}
+
+.fundo-6{
+    background: #c7653f;
+}
+
+.fundo-7{
+    background: #1868ae;
+}
+
+.fundo-8{
+    background: #571674;
+}
+
+.fundo-9{
+    background: #d1d0cc;
+}
+
+.fundo-10{
+    background: #571674;
+}
+
+.fundo-11{
+    background: #d1d0cc;
+}
+
+.fundo-12{
+    background: #174d89;
+}
+
+.fundo-13{
+    background: #c7653f;
+}
+
+.fundo-14{
+    background: #174d89;
+}
+
+.fundo-15{
+    background: #000000;
+}
+
+.btn-seta{
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn-seta.btn-voltar{
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover{
+    background-color: #ee7676;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #c08057;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #c08057;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #c08057;
+}
